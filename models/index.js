@@ -13,16 +13,6 @@ Post.belongsTo(User, {
   onDelete: 'SET NULL'
 });
 
-User.belongsToMany(Post, {
-  foreignKey: 'user_id',
-  onDelete: 'SET NULL'
-});
-
-Post.belongsToMany(User, {
-  foreignKey: 'post_id',
-  onDelete: 'SET NULL'
-});
-
 Comment.belongsTo(User, {
   foreignKey: 'user_id',
   onDelete: 'SET NULL'
@@ -42,4 +32,4 @@ Post.hasMany(Comment, {
   foreignKey: 'post_id'
 });
 
-module.exports = { User, Post, Vote, Comment };
+module.exports = { User, Post, Comment };
