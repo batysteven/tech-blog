@@ -130,6 +130,7 @@ main {
 .post {
     border: #47280a;
     border-style: solid;
+    margin-bottom: 10px;
 }
 
 .post .title {
